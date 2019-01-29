@@ -150,23 +150,13 @@ PRODUCT_PACKAGES += \
     vendor.dolby.hardware.dms@1.0 \
     vendor.qti.hardware.mwqemadapter@1.0 \
     vendor.qti.hardware.tui_comm@1.0_vendor \
-    camera.msm8998 \
-    libFaceGrade \
-    libMiCameraHal \
     libOmxVpp \
     libSonyIMX386PdafLibrary \
-    libXMFD_AgeGender \
-    lib_lowlight \
-    lib_lowlight_dxo \
     libacdb-fts \
     libacdbloader \
     libacdbrtac \
     libadiertac \
     libadm \
-    libarcsoft_beauty_shot \
-    libarcsoft_beautyshot \
-    libarcsoft_beautyshot_image_algorithm \
-    libarcsoft_beautyshot_video_algorithm \
     libarcsoft_dualcam_optical_zoom \
     libarcsoft_dualcam_optical_zoom_control \
     libarcsoft_dualcam_refocus \
@@ -174,12 +164,9 @@ PRODUCT_PACKAGES += \
     libfastcvadsp_stub \
     libfastcvopt \
     libflash_pmic \
-    libhal_dbg \
     libjpegdhw \
     libjpegdmahw \
     libjpegehw \
-    libmibokeh_835 \
-    libmm-qcamera \
     libmmcamera2_c2d_module \
     libmmcamera2_cpp_module \
     libmmcamera2_frame_algorithm \
@@ -212,7 +199,6 @@ PRODUCT_PACKAGES += \
     libmmcamera_hvx_grid_sum \
     libmmcamera_imglib \
     libmmcamera_imglib_faceproc_adspstub \
-    libmmcamera_interface \
     libmmcamera_isp_abf48 \
     libmmcamera_isp_aec_bg_stats47 \
     libmmcamera_isp_bf_stats47 \
@@ -270,15 +256,10 @@ PRODUCT_PACKAGES += \
     libmmcamera_tuning \
     libmmcamera_tuning_lookup \
     libmmjpeg \
-    libmmjpeg_interface \
-    libmmlib2d_interface \
     libmmqjpeg_codec \
     libmmqjpegdma \
-    libmorpho_easy_hdr \
-    libmorpho_hdr_checker \
     libmpbase \
     libois_bu63164 \
-    libqomx_core \
     libqomx_jpegdec \
     libqomx_jpegenc \
     libqomx_jpegenc_pipe \
