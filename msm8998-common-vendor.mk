@@ -109,19 +109,20 @@ PRODUCT_PACKAGES += \
     libEGL_adreno \
     libGLESv1_CM_adreno \
     libGLESv2_adreno \
-    libQTapGLES \
     libq3dtools_adreno \
     libq3dtools_esx \
     libC2D2 \
     libCB \
     libOpenCL \
     libQSEEComAPI \
+    libVkLayer_q3dtools \
     libadreno_utils \
     libadsprpc \
     libc2d30_bltlib \
     libdapparamstorage \
     libdiag \
     libdsutils \
+    libgpudataproducer \
     libgpustats \
     libgsl \
     libidl \
@@ -139,13 +140,18 @@ PRODUCT_PACKAGES += \
     libqmi_encdec \
     libqmi_legacy \
     libqmiservices \
+    libqseed3 \
+    libsdm-color \
+    libsdm-diag \
     libsdm-disp-vndapis \
+    libsdmextension \
     libsdsprpc \
     libsensor1 \
     libsensor_reg \
     libsns_low_lat_stream_stub \
     libthermalclient \
     libtime_genoff \
+    libtinyxml2_1 \
     sensors.ssc \
     vendor.dolby.hardware.dms@1.0 \
     vendor.qti.hardware.mwqemadapter@1.0 \
@@ -314,7 +320,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.btconfigstore@2.0-impl \
     vendor.qti.hardware.qccvndhal@1.0-impl \
     vendor.qti.hardware.soter@1.0-impl \
-    vulkan.msm8998 \
+    vulkan.adreno \
     lib-imscmservice \
     lib-imsdpl \
     lib-imsqimf \
@@ -381,7 +387,6 @@ PRODUCT_PACKAGES += \
     libqcrildatactl \
     libqisl \
     libqrtr \
-    libqseed3 \
     libqsocket \
     librcc \
     libril-qc-hal-qmi \
@@ -391,16 +396,11 @@ PRODUCT_PACKAGES += \
     libril-qcril-hook-oem \
     librilqmiservices \
     librpmb \
-    libsdedrm \
-    libsdm-color \
-    libsdm-diag \
-    libsdmextension \
     libsettings \
     libsoc_helper \
     libssd \
     libsystem_health_mon \
     libthermalioctl \
-    libtinyxml2_1 \
     libwms \
     libwqe \
     libxml \
@@ -596,15 +596,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     system_ext_priv-app_ims_lib_arm64_libimscamera_jni_so \
     system_ext_priv-app_ims_lib_arm64_libimsmedia_jni_so \
-    vendor_lib_eglSubDriverAndroid_so \
     vendor_lib_libEGL_adreno_so \
-    vendor_lib_libGLESv1_CM_adreno_so \
     vendor_lib_libGLESv2_adreno_so \
     vendor_lib_libq3dtools_adreno_so \
-    vendor_lib_libq3dtools_esx_so \
-    vendor_lib64_eglSubDriverAndroid_so \
     vendor_lib64_libEGL_adreno_so \
-    vendor_lib64_libGLESv1_CM_adreno_so \
     vendor_lib64_libGLESv2_adreno_so \
-    vendor_lib64_libq3dtools_adreno_so \
-    vendor_lib64_libq3dtools_esx_so
+    vendor_lib64_libq3dtools_adreno_so
