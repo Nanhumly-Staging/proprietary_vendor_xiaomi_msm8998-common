@@ -339,3 +339,12 @@ dex_import {
 	system_ext_specific: true,
 }
 
+prebuilt_etc_xml {
+	name: "android.hardware.drm@1.4-service.widevine",
+	owner: "xiaomi",
+	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.drm@1.4-service.widevine.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
