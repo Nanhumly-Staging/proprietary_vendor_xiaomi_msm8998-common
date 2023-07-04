@@ -106,23 +106,23 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libantradio",
+	name: "libtime_genoff",
 	owner: "xiaomi",
 	strip: {
 		none: true,
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary/system_ext/lib/libantradio.so"],
+			srcs: ["proprietary/vendor/lib/libtime_genoff.so"],
 		},
 		android_arm64: {
-			srcs: ["proprietary/system_ext/lib64/libantradio.so"],
+			srcs: ["proprietary/vendor/lib64/libtime_genoff.so"],
 		},
 	},
 	compile_multilib: "both",
 	check_elf_files: false,
 	prefer: true,
-	system_ext_specific: true,
+	soc_specific: true,
 }
 
 android_app_import {
@@ -357,5 +357,14 @@ dex_import {
 	owner: "xiaomi",
 	jars: ["proprietary/system_ext/framework/qti-telephony-common.jar"],
 	system_ext_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "android.hardware.drm@1.4-service.widevine",
+	owner: "xiaomi",
+	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.drm@1.4-service.widevine.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
 }
 
