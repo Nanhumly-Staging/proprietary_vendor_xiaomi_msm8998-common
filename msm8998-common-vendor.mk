@@ -630,6 +630,7 @@ PRODUCT_PACKAGES += \
     PowerOffAlarm \
     MotoSignatureApp \
     QtiTelephonyService \
+    datastatusnotification \
     imssettings \
     uceShimService \
     MotoDolbyDax3 \
