@@ -185,6 +185,7 @@ android_app_import {
 	name: "MotoDolbyV3",
 	owner: "xiaomi",
 	apk: "proprietary/system_ext/app/MotoDolbyV3/MotoDolbyV3.apk",
+	overrides: ["AudioFX", "MusicFX"],
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
