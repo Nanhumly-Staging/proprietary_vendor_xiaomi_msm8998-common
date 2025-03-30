@@ -378,6 +378,7 @@ PRODUCT_PACKAGES += \
     libpdnotifier \
     libperipheral_client \
     libpn553_fw \
+    libprotobuf-cpp-full-21.7 \
     libqcc_file_agent \
     libqcmaputils \
     libqcrilFramework \
