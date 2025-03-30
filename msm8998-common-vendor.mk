@@ -422,7 +422,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.gnss@3.0 \
     vendor.qti.gnss@4.0-service \
     vendor.qti.gnss@4.0 \
-    vendor.qti.hardware.alarm@1.0 \
+    vendor.qti.hardware.alarm@1.0_vendor \
     vendor.qti.hardware.bluetooth_sar@1.0 \
     vendor.qti.hardware.bluetooth_sar@1.1 \
     vendor.qti.hardware.data.cne.internal.api@1.0 \
@@ -510,6 +510,7 @@ PRODUCT_PACKAGES += \
     libqcc \
     libqcc_file_agent_sys \
     vendor.qti.diaghal@1.0 \
+    vendor.qti.hardware.alarm@1.0 \
     vendor.qti.hardware.qccsyshal@1.0-halimpl \
     vendor.qti.hardware.qccsyshal@1.0 \
     vendor.qti.hardware.qccvndhal@1.0 \
@@ -528,6 +529,7 @@ PRODUCT_PACKAGES += \
     com.qti.dpmframework \
     dpmapi \
     qcrilhook \
+    vendor.qti.hardware.alarm-V1.0-java \
     manifest_android.hardware.drm-service.widevine.xml \
     vendor.qti.gnss@4.0-service.xml \
     adpl \
