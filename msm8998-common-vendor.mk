@@ -145,6 +145,7 @@ PRODUCT_PACKAGES += \
     libsensor_reg \
     libsns_low_lat_stream_stub \
     libthermalclient \
+    libtime_genoff \
     sensors.ssc \
     vendor.dolby.hardware.dms@1.0 \
     vendor.qti.hardware.tui_comm@1.0_vendor \
@@ -396,7 +397,6 @@ PRODUCT_PACKAGES += \
     libssd \
     libsystem_health_mon \
     libthermalioctl \
-    libtime_genoff \
     libtinyxml2_1 \
     libwms \
     libwqe \
