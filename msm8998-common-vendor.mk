@@ -150,7 +150,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.mwqemadapter@1.0 \
     vendor.qti.hardware.tui_comm@1.0_vendor \
     camera.msm8998 \
-    sound_trigger.primary.msm8998 \
     libFaceGrade \
     libMiCameraHal \
     libOmxVpp \
