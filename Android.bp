@@ -326,60 +326,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "sensors.msm8998",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/sensors.msm8998.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libhardware",
-                "libsensor1",
-                "libsensor_reg",
-                "libdiag",
-                "libpower",
-                "libsns_low_lat_stream_stub",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/sensors.msm8998.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libhardware",
-                "libsensor1",
-                "libsensor_reg",
-                "libdiag",
-                "libpower",
-                "libsns_low_lat_stream_stub",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libC2D2",
     owner: "xiaomi",
     strip: {
@@ -1803,6 +1749,59 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libc++",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "sensors.ssc",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/sensors.ssc.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libhardware",
+                "libsensor1",
+                "libsensor_reg",
+                "libdiag",
+                "libpower",
+                "libsns_low_lat_stream_stub",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/sensors.ssc.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libhardware",
+                "libsensor1",
+                "libsensor_reg",
+                "libdiag",
+                "libpower",
+                "libsns_low_lat_stream_stub",
+                "libc++",
+                "libc",
                 "libm",
                 "libdl",
             ],

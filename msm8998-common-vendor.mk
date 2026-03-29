@@ -112,7 +112,6 @@ PRODUCT_PACKAGES += \
     libQTapGLES \
     libq3dtools_adreno \
     libq3dtools_esx \
-    sensors.msm8998 \
     libC2D2 \
     libCB \
     libOpenCL \
@@ -147,6 +146,7 @@ PRODUCT_PACKAGES += \
     libsns_low_lat_stream_stub \
     libthermalclient \
     libtime_genoff \
+    sensors.ssc \
     vendor.dolby.hardware.dms@1.0 \
     vendor.qti.hardware.mwqemadapter@1.0 \
     vendor.qti.hardware.tui_comm@1.0_vendor \
