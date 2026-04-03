@@ -200,48 +200,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libQTapGLES",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/egl/libQTapGLES.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libdl",
-                "libz",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/egl/libQTapGLES.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libdl",
-                "libz",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "egl",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libq3dtools_adreno",
     owner: "xiaomi",
     strip: {
@@ -296,9 +254,9 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libcutils",
-                "libdl",
-                "libz",
                 "liblog",
+                "libz",
+                "libdl",
                 "libc++",
                 "libc",
                 "libm",
@@ -310,9 +268,9 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libcutils",
-                "libdl",
-                "libz",
                 "liblog",
+                "libz",
+                "libdl",
                 "libc++",
                 "libc",
                 "libm",
@@ -382,6 +340,7 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libgsl",
                 "libutils",
+                "libvndksupport",
                 "libc++",
                 "libc",
                 "libm",
@@ -397,6 +356,7 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libgsl",
                 "libutils",
+                "libvndksupport",
                 "libc++",
                 "libc",
                 "libm",
@@ -422,6 +382,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libcutils",
+                "libvndksupport",
                 "libc++",
                 "libc",
                 "libm",
@@ -434,6 +395,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libcutils",
+                "libvndksupport",
                 "libc++",
                 "libc",
                 "libm",
@@ -476,6 +438,43 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "liblog",
                 "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libVkLayer_q3dtools",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libVkLayer_q3dtools.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libz",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libVkLayer_q3dtools.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libz",
                 "libc",
                 "libm",
                 "libdl",
@@ -6699,7 +6698,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vulkan.msm8998",
+    name: "vulkan.adreno",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -6707,7 +6706,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/hw/vulkan.msm8998.so",
+                "proprietary/vendor/lib64/hw/vulkan.adreno.so",
             ],
             shared_libs: [
                 "libadreno_utils",

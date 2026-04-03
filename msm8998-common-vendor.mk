@@ -109,13 +109,13 @@ PRODUCT_PACKAGES += \
     libEGL_adreno \
     libGLESv1_CM_adreno \
     libGLESv2_adreno \
-    libQTapGLES \
     libq3dtools_adreno \
     libq3dtools_esx \
     libC2D2 \
     libCB \
     libOpenCL \
     libQSEEComAPI \
+    libVkLayer_q3dtools \
     libadreno_utils \
     libadsprpc \
     libc2d30_bltlib \
@@ -314,7 +314,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.btconfigstore@2.0-impl \
     vendor.qti.hardware.qccvndhal@1.0-impl \
     vendor.qti.hardware.soter@1.0-impl \
-    vulkan.msm8998 \
+    vulkan.adreno \
     lib-imscmservice \
     lib-imsdpl \
     lib-imsqimf \
