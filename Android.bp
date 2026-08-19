@@ -2236,7 +2236,7 @@ cc_prebuilt_library_shared {
                 "libbinder",
                 "libhal_dbg",
                 "libMiCameraHal",
-                "android.frameworks.displayservice@1.0",
+                "lineage.frameworks.displayservice@1.0",
                 "libhidlbase",
                 "libhidltransport",
                 "libc++",
